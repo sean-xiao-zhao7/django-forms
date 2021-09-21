@@ -1,0 +1,17 @@
+{% extends 'formsapp/base.html' %}
+
+{% block title %}
+    All reviews
+{% endblock %}
+
+{% block content %}
+    <ol>
+    {% for review in reviews %}
+        <li>
+            {{ review.name }}<br/>
+            {{ review.rating }}<br/>
+            {{ review.review }}<br/>
+        </li>
+    {% endfor %}
+    </ol>
+{% endblock  %}

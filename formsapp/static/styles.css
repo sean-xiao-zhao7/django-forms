@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+form {
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 30rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.26);
+}
+
+button {
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    background-color: rgb(0, 106, 192);
+    color: white;
+    border: 1px solid rgb(0, 106, 192);
+}
+
+button:hover, button:active {
+    background-color: rgba(0, 106, 192, 0.562);
+    border-color: rgba(0, 106, 192, 0.562);;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.form-control input {
+    font: inherit;
+    padding: 0.25rem;
+    border-radius: 4px;
+    border: 1px solid rgba(128, 128, 128, 0.274);
+    display: block;
+    width: 10rem;
+}
+
+.form-control input:focus {
+    border: 1px solid rgb(0, 106, 192);
+    outline: none;
+    background-color: 1px solid rgba(0, 106, 192, 0.048);
+}
+
+.form-control label {
+    font-weight: bold;
+    display: block;
+}

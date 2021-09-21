@@ -1,0 +1,12 @@
+{% extends 'formsapp/base.html' %}
+
+{% block title %}
+    Review - {{ review.name }}
+{% endblock %}
+
+{% block content %}
+    <li>{{ review.name }}</li>
+    <li>{{ review.rating }}</li>
+    <li>{{ review.review }}</li>
+{% endblock  %} 
+
