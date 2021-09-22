@@ -8,5 +8,11 @@
     <li>{{ review.name }}</li>
     <li>{{ review.rating }}</li>
     <li>{{ review.review }}</li>
+    <li>Favorite: {{ favorite }}</li>
+    <form method='POST' action='/single-review/favorite'>
+    {% csrf_token %}
+    <input type='hidden' name='id' value='{{review.id}}' />
+    <button>Favorite</button>
+    </form>
 {% endblock  %} 
 
